@@ -1,0 +1,14 @@
+---
+import YouTubeEmbed from '../base/YouTubeEmbed.astro';
+const {url, rounded} = Astro.props;
+---
+
+<section class="youtube-embed__section">
+  <YouTubeEmbed url={url} rounded={rounded} />
+</section>
+
+<style>
+ .youtube-embed__section {
+   margin: var(--section-margin) auto;
+ }
+</style>

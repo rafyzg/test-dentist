@@ -1,3 +1,9 @@
+---
+import Map from '../base/Map.astro';
+import IconBlock from "@components/content/IconBlock.astro";
+// const {url, rounded} = Astro.props;
+---
+
 <div class="py-10">
   <div class="w-full ltablet:max-w-4xl max-w-5xl mx-auto">
     <div
@@ -6,35 +12,69 @@
       <div
         class="flex items-center pt-10 pb-12 px-6 sm:pt-16 sm:px-16 ltablet:py-20 ltablet:pr-0 lg:py-20 lg:pr-0 xl:px-20"
       >
-        <div class="ltablet:self-center lg:self-center font-sans">
+        
+        <div class="ltablet:self-center lg:self-center font-sans divide-y">
           <h2 class="text-3xl font-medium text-white sm:text-4xl">
-            <span class="block">Ready to try it?</span>
-            <span class="block">Get started in less than a minute.</span>
+            <span class="block">מרפאת סמייל דנט של ד"ר סמי</span>
           </h2>
-          <p class="mt-4 text-lg leading-6 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-            apparet statim, quae sint id aliis narrare gestiant.
-          </p>
+          
+          <div class="text-white">
+            <div class="flex items-center">
+              <i class="iconify w-7 h-7 mb-2 text-white" data-icon="mdi:phone-outline"></i>
+              <p>טלפון</p>
+            </div>
+            <b>03-6724060</b>
+          </div>
+
+          
+          <div class="text-white">
+            <div class="flex items-center">
+              <i class="iconify w-7 h-7 mb-2 text-white" data-icon="mdi:address-marker-outline"></i>
+              <p>כתובת</p>
+            </div>
+            <b>הרא"ה 24, רמת גן</b>
+          </div>
+          
+          
+          <div class="text-white">
+            <div class="flex items-center">
+              <i class="iconify w-7 h-7 mb-2 text-white" data-icon="mdi:shop-hours-outline"></i>
+              <p>שעות פעילות</p>
+            </div>
+            <p>ראשון: סגור</p>
+            <p>שני: 09:00 - 13:00 15:00 - 19:00</p>
+            <p>שלישי: סגור</p>
+            <p>רביעי: 09:00 - 13:00 15:00 - 19:00</p>
+            <p>חמישי: 09:00 - 13:00 15:00 - 19:00</p>
+            <p>שישי: 09:00 - 14:00</p>
+          </div>
+
           <a
-            href="#"
+            href="tel:036724060"
             class="mt-8 bg-white border border-transparent rounded-xl shadow px-6 py-4 inline-flex items-center text-sm font-medium text-muted-600 hover:text-white hover:bg-primary-400 transition-colors duration-300"
           >
-            Start your Trial
+            התקשר כעת
           </a>
+
+          <!--
+          <a
+            href="https://ul.waze.com/ul?place=ChIJi_vSqDRKHRURA1DfEs83YUY&ll=32.08399060%2C34.81881070&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+            class="mt-8 bg-white border border-transparent rounded-xl shadow px-6 py-4 inline-flex items-center text-sm font-medium text-muted-600 hover:text-white hover:bg-primary-400 transition-colors duration-300"
+          >
+            נווט למרפאה
+          </a>
+           -->
         </div>
       </div>
-      <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-        <img
-          class="block dark:hidden translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 ltablet:translate-y-20 lg:translate-y-20"
-          src="/img/screens/doctors.png"
-          alt="Cta image"
-        />
-        <img
-          class="hidden dark:block translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 ltablet:translate-y-20 lg:translate-y-20"
-          src="/img/screens/doctors-dark.png"
-          alt="Cta image"
-        />
+
+      <div
+        class="flex items-center pt-10 pb-12 px-3 sm:pt-16 sm:px-16 ltablet:py-10 ltablet:pr-0 lg:py-10 lg:pr-0 xl:px-10"
+      >
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.4548450885995!2d34.82099938426681!3d32.0839905811868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4a34a8d2fb8b%3A0x466137cf12df5003!2z157XqNek15DXqiDXqdeZ16DXmdeZ150tINeTIteoINeeLiDXodee15k!5e0!3m2!1siw!2sil!4v1678098227874!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
       </div>
+
     </div>
   </div>
 </div>
