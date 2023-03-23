@@ -3,28 +3,43 @@ import Navbar from "@components/navigation/Navbar.astro";
 import Footer from "@components/section/Footer.astro";
 import 'swiper/swiper-bundle.css';
 import "../styles/main.css";
-const { title } = Astro.props;
+import json from "../data.json";
+const { lang } = Astro.props;
+
+const data = json[lang];
+
+
 ---
 
 <!DOCTYPE html>
-<html lang="en" x-data="theme()" :class="$store.app.isDark ? 'dark' : ''">
+<html lang={lang} x-data="theme()" :class="$store.app.isDark ? 'dark' : ''">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>מרפאת שיניים{"- " + title}</title>
+    <title>{data.title}</title>
   </head>
-  <body x-data="homeSpy()" dir="rtl">
+  <body x-data="homeSpy()" dir={data.dir}>
     <!-- Navbar -->
-    <Navbar />
+    <Navbar
+      title={data.title}
+      pages={data.pages}
+      mainButtonText={data.mainButtonText}
+      telephone={json.telephone}
+    />
 
     <!-- Body slot -->
     <slot />
 
     <!-- Footer -->
-    <Footer />
+    <Footer
+      mainButtonText={data.mainButtonText}
+      telephone={json.telephone}
+      title={data.title}
+      cc={data.cc}
+    />
 
     <!-- Main script -->
     <script src="../js/main"></script>

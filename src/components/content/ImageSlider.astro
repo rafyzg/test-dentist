@@ -1,16 +1,20 @@
 ---
 import Polka from "@components/base/Polka.astro";
 import Card from "@components/base/Card.astro";
+
+const { imageAlt } = Astro.props;
+
 ---
 
 <div x-cloak class="relative overflow-hidden" x-intersect="activeStep = ''">
   <div x-data="swiper()" class="carousel-container">
-    <div class="carousel-controls flex items-center justify-end mb-4">
-      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slideNext()">
-        <i class="iconify" data-icon="lucide:arrow-right"></i>
-      </button>
+    <div class="carousel-controls flex items-center justify-end mb-4" dir="ltr">
+
       <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slidePrev()">
         <i class="iconify" data-icon="lucide:arrow-left"></i>
+      </button>
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slideNext()">
+        <i class="iconify" data-icon="lucide:arrow-right"></i>
       </button>
 
     </div>
@@ -22,7 +26,7 @@ import Card from "@components/base/Card.astro";
             <div class="w-full flex flex-col gap-8 font-sans items-stretch">
               <img
                 src="/img/clinic/1.jpg"
-                alt="דר סמי מרפאת שיניים"
+                alt={imageAlt}
               />
             </div>
           </Card>
@@ -33,7 +37,7 @@ import Card from "@components/base/Card.astro";
             <div class="w-full flex flex-col gap-8 font-sans">
               <img
                 src="/img/clinic/2.jpg"
-                alt="דר סמי מרפאת שיניים"
+                alt={imageAlt}
               />
             </div>
           </Card>
@@ -44,7 +48,7 @@ import Card from "@components/base/Card.astro";
             <div class="w-full flex flex-col gap-8 font-sans">
               <img
                 src="/img/clinic/3.jpg"
-                alt="דר סמי מרפאת שיניים"
+                alt={imageAlt}
               />
             </div>
           </Card>
@@ -55,7 +59,7 @@ import Card from "@components/base/Card.astro";
             <div class="w-full flex flex-col gap-8 font-sans">
               <img
                 src="/img/clinic/4.jpg"
-                alt="דר סמי מרפאת שיניים"
+                alt={imageAlt}
               />
             </div>
           </Card>
@@ -66,7 +70,7 @@ import Card from "@components/base/Card.astro";
             <div class="w-full flex flex-col gap-8 font-sans">
               <img
                 src="/img/clinic/5.jpg"
-                alt="דר סמי מרפאת שיניים"
+                alt={imageAlt}
               />
             </div>
           </Card>
@@ -77,7 +81,7 @@ import Card from "@components/base/Card.astro";
             <div class="w-full flex flex-col gap-8 font-sans">
               <img
                 src="/img/clinic/6.jpg"
-                alt="דר סמי מרפאת שיניים"
+                alt={imageAlt}
               />
             </div>
           </Card>

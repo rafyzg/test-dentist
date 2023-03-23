@@ -1,0 +1,435 @@
+{
+    "telephone": "tel:036724060",
+    "waze": "https://waze.com/ul/hsv8y82dqe",
+    "google": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.4548450885995!2d34.82099938426681!3d32.0839905811868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4a34a8d2fb8b%3A0x466137cf12df5003!2z157XqNek15DXqiDXqdeZ16DXmdeZ150tINeTIteoINeeLiDXodee15k!5e0!3m2!1siw!2sil!4v1678098227874!5m2!1siw!2sil",
+    "langs": [
+        {
+            "text": "English",
+            "icon": ""
+        },
+        {
+            "text": "Russian",
+            "icon": ""
+        },
+        {
+            "text": "Hebrew",
+            "icon": ""
+        }
+    ],
+    "en": {
+        
+        "dir": "ltr",
+        "title": "Dr Sami - Dentist",
+        "siteTitle": "Dentist - Dr Sami",
+        "pages": ["Homepage", "Patients", "About"],
+        "mainButtonText": "Call Us",
+        "cc": "All rights reserved to SmileDent - Dr Sami Dentist",
+
+        "description": "",
+        "youtubeLink": "https://www.youtube.com/watch?v=mosSGV6awRE",
+        "galleryTitle": "The Clinic",
+
+        "testimonialsTitle": "The Dentist's services",
+        "testimonialsSubTitle": "The operations are done gently, professionally with warm environment and compassionate relationship",
+        "about": [
+            {
+                "icon": "telphone",
+                "text": "telephone",
+                "value": "03-6724060"
+            }
+        ],
+        "hero": {
+            "text": "SMILES START HERE",
+            "description": [
+                "Dr. Sami offers top general and complex dentistry services in a safe, comfortable enviorment.",
+                "Dr Sami has over 25 years of experience in dentistry, he is the head of SmileDent clinic in Ramat Gan",
+                "At SmileDent - Dr Sami, we specialize in providing the best general, complex & implant dentistry in Ramat Gan, Israel. We are proud to offer a variety of dental treatments ranging from basic care and hygiene to full-mouth reconstructive surgeries. Because we believe in the importance of maintaining a healthy smile, we are committed to providing a positive dental experience to every patient."
+            ],
+            "mainButtonText": "Call Now",
+            "secondButtonText": "Navigate to Clinic",
+            "altText": "Dr Sami Dentist in Ramat Gan"
+        },
+        "features": {
+            "title": "The Clinics Services",
+            "subTitle": "We are a patient-centered team whose goal is to provide a very high quality of oral care with a focus on prevention.",
+            "features": [
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "Family Dentistry",
+                    "text": "Regular cleanings provided by a dental hygienist, custom sports mouth guards and night guards along with regular brushing and flossing are all important parts in preventing infection, pain and nasty little cavities.",
+                    "class":"'text-rose-500'"
+                },
+                {        
+                    "icon": "mdi:tooth-outline",
+                    "title": "Orthodontic Dentistry",
+                    "text": "Dr Sami. specializes in Orthodontics which involves the treatment of crowded and crooked teeth as well as malocclusion problems.",
+                    "class":"'text-primary-600'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "שיקום הפה",
+                    "title": "Restroative Care",
+                    "text": "Implants, Crowns, Veneers, we do it all. We offer solutions for complicated cases using the most modern and safe technologies.",
+                    "class":"'text-rose-500'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "Cosmetic Dentisty",
+                    "text": "We know all of our patients want to have their smiles be the very best they can be. That’s why we offer cosmetic dental services such as teeth whitening and veneers.",
+                    "class":"'text-primary-600'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "Dental Implants",
+                    "text": "Missing teeth don’t just affect your appearance, but your bite mechanics and overall oral health, too. Let us help you restore your health and well-being with the right kind of implant.",
+                    "class":"'text-rose-500'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "Periodontal Dentistry",
+                    "text": "Dr Sami. prevent and treats conditions and dieases that affect the structures that support your teeth. This include gums, periodonta ligament, and alveolar bone.",
+                    "class":"'text-primary-600'"
+                }
+            ]
+        },
+        "gallery": {
+            "imageAlt": "picture of dr sami dentist clinic in ramat gan",
+            "title": "Gallery",
+            "youtube": "https://www.youtube.com/watch?v=mosSGV6awRE"
+        },
+        "testimonials": {
+            "miniTitle": "Customer Reviews",
+            "title": "Our Customers Recommendations of the Clinic",
+            "reviews": [
+                {
+                    "text": "My treatment experience in Dr. sami clinic was one that I havent expeirenced before. He is very professional, careful and knowledgeable.",
+                    "alt": "dr sami ramat gan recommendation",
+                    "username": "Violetta S",
+                    "image": "https://media.cssninja.io/shuriken/avatars/4.svg"
+                },
+                {
+                    "text": "Very geneouris and professional treatment of the staff and the Doctor, they are wonderful.",
+                    "alt": "dr sami ramat gan recommendation",
+                    "username": "Elionor n",
+                    "image": "https://media.cssninja.io/shuriken/avatars/2.svg"
+                },
+                {
+                    "text": "Professional work and personal care! I highy reccomend Dr. Sami.",
+                    "alt": "dr sami ramat gan recommendation",
+                    "username": "Guy F",
+                    "image": "https://media.cssninja.io/shuriken/avatars/3.svg"
+                },
+                {
+                    "text": "All my family are patients of Dr. Sami! He is a professional and reliable doctor! Highly recommend ❤🙏",
+                    "alt": "dr sami ramat gan recommendation",
+                    "username": "Svetlana S",
+                    "image": "https://media.cssninja.io/shuriken/avatars/9.svg"
+                },
+                {
+                    "text": "This is the best doctor for your family!",
+                    "alt": "dr sami ramat gan recommendation",
+                    "username": "Olga G",
+                    "image": "https://media.cssninja.io/shuriken/avatars/12.svg"
+                }
+            ]
+        },
+        "cta": {
+            "title": "SmileDent Clinic of Dr. Sami",
+            "buttonText": "Contact Us",
+            "buttonLink": "tel:036724060",
+            "items": [
+                {
+                    "icon": "mdi:phone-outline",
+                    "title": "Telephone",
+                    "text": ["03-6724060"]
+                },
+                {
+                    "icon": "mdi:address-marker-outline",
+                    "title": "Address",
+                    "text": ["Haroea 24, Ramat Gan"]
+                },
+                {
+                    "icon": "mdi:shop-hours-outline",
+                    "title": "Opening Hours",
+                    "text": [
+                        "Sunday: Closed",
+                        "Monday: 09:00 - 15:00 13:00 - 19:00",
+                        "Tuesday: Closed",
+                        "Wendesday: 09:00 - 15:00 13:00 - 19:00",
+                        "Thursday: 09:00 - 15:00 13:00 - 19:00",
+                        "Friday: 09:00 - 14:00"
+                    ]
+                }
+            ]
+        }
+    },
+    "he": {
+        "dir": "rtl",
+        "title": "מרפאת שיניים - דר סמי",
+        "siteTitle": "דר סמי",
+        "pages": ["עמוד הבית", "מטופלים", "אודות"],
+        "mainButtonText": "התקשר כעת",
+        "cc": "כל הזכויות שמורות ל דר סמי",
+        "hero": {
+            "text": "החיוך מתחיל כאן",
+            "description": [
+                "אצל דר סמי אנחנו מציעים טיפולי שיניים ברמה מקצועית עם יחס אישי ואווירה טובה.",
+                "דר סמי עובר בתחום רפואת השיניים יותר מ-25 שנה ועומד בראש מרפאת השיניים סמייל דנט שברמת גן",
+                "המרפאה מציעה מגוון טיפולים שונים כגון טיפולי חירום, טיפולי אותודנטיה, טיפולי חניכיים ושיקום הפה, טיפולים מונעים וטיפולים כירוגיים מרוכבים ועוד."
+            ],
+            "mainButtonText": "התקשר כעת",
+            "secondButtonText": "נווט למרפאה",
+            "altText": "דר סמי מרפאת שיניים רמת גן"
+        },
+        "features": {
+            "title": "הכירו את שירותי המרפאה",
+            "subTitle": "הטיפולים מתבצעים בעדינות ובמקצועיות, עם אווירה רגועה ויחס חם.",
+            "features": [
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "בדיקה, יעוץ, תכנית טיפול והצעת מחיר בחינם",
+                    "text": "מבוססות על ניסיון של 25 שנה כמומחה לשיקום. חיסכון בעלויות – הטיפול המותאם ביותר לשיניים שלך!",
+                    "class":"'text-rose-500'"
+                },
+                {        
+                    "icon": "mdi:tooth-outline",
+                    "title": "יישור שיניים",
+                    "text": "מרפאתנו מתמחה ביישור שיניים לבוגרים והגשמת חלום - שיניים ישרות ומושלמות.",
+                    "class":"'text-primary-600'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "שיקום הפה",
+                    "text": "הגישה הרפואית המתקדמת, הבטוחה והאסתית ביותר להשבת התפקודים הדנטליים למערכת הלעיסה, הלסתות והפנים.",
+                    "class":"'text-rose-500'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "טיפולים אסתטיים",
+                    "text": "במרפאה ניתנים מגוון טיפולי שיניים מקצועיים לתיקון פגיעות ונזקים בשיניים, העוזרים לכם להיראות ולהרגיש נפלא. אנו מציעים מגוון טיפולים כגון הלבנה וציפוי שיניים.",
+                    "class":"'text-primary-600'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title":"השתלות שיניים",
+                    "text": "במרפאה אנו מבצעים השתלות שיניים ושיקום על גבי שתלים, לסובלים מבעיות חוסר שיניים או משיניים פגומות. הטיפול המקצועי והאיכות הגבוהה של השתלים הדנטליים, מבטיחים תוצאות הנשמרות למשך שנים רבות.",
+                    "class":"'text-rose-500'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "פריודונטיה - טיפולים במחלת חניכיים",
+                    "text": "דר סמי הינו מומחה לטיפול במחלות החניכיים, הוא יאבחן באופן מדוייק את בעיית החניכיים ויציע דרכי טיפול ופתרונות מתקדמים לטיפול הבעיה.",
+                    "class":"'text-primary-600'"
+                }
+            ]
+        },
+        "gallery": {
+            "imageAlt": "תמונה של מרפאת דר סמי ברמת גן",
+            "title": "גלרייה",
+            "youtube": "https://www.youtube.com/watch?v=mosSGV6awRE"
+        },
+        "testimonials": {
+            "miniTitle": "חוות דעת",
+            "title": "המלצות לקוחותינו על המרפאה",
+            "reviews": [
+                {
+                    "text": "חווית הטיפול במרפאתו של דר' סמי הינה כזאת שלא זכיתי לה אצל אף רופא שיניים אחר. דר' סמי הינו רופא בעל ידע רב, יסודי, קפדן ומקצועי ביותר! דר' סמי רופא הגון, קשוב ואמין!",
+                    "alt": "המלצה על דר סמי",
+                    "username": "Violetta S",
+                    "image": "https://media.cssninja.io/shuriken/avatars/4.svg"
+                },
+                {
+                    "text": "יחס מאוד אדיב ומקצועי של הצוות ושל הרופא. פשוט מקסימים.",
+                    "alt": "המלצה על דר סמי",
+                    "username": "Elionor n",
+                    "image": "https://media.cssninja.io/shuriken/avatars/2.svg"
+                },
+                {
+                    "text": "  עבודה מקצועית ויחס אישי!! מומלץ בחום!!",
+                    "alt": "המלצה על דר סמי",
+                    "username": "Guy F",
+                    "image": "https://media.cssninja.io/shuriken/avatars/3.svg"
+                },
+                {
+                    "text": "ממליצה בחום! רופא אמין ומקצועי! כל המשפחה שלי מטופלת אצלו ,אין על דוקטור סמי ❤🙏",
+                    "alt": "המלצה על דר סמי",
+                    "username": "Svetlana S",
+                    "image": "https://media.cssninja.io/shuriken/avatars/9.svg"
+                },
+                {
+                    "text": "זה הרופא הטוב ביותר לכל המשפחה שלנו",
+                    "alt": "המלצה על דר סמי",
+                    "username": "Olga G",
+                    "image": "https://media.cssninja.io/shuriken/avatars/12.svg"
+                }
+            ]
+        },
+        "cta": {
+            "title": "מרפאת סמייל דנט של דר סמי",
+            "buttonText": "התקשר כעת",
+            "buttonLink": "tel:036724060",
+            "items": [
+                {
+                    "icon": "mdi:phone-outline",
+                    "title": "טלפון",
+                    "text": ["03-6724060"]
+                },
+                {
+                    "icon": "mdi:address-marker-outline",
+                    "title": "כתובת",
+                    "text": ["הרא'ה 24, רמת גן"]
+                },
+                {
+                    "icon": "mdi:shop-hours-outline",
+                    "title": "שעות פעילות",
+                    "text": [
+                        "ראשון: סגור",
+                        "שני: 09:00 - 13:00 15:00 - 19:00",
+                        "שלישי: סגור",
+                        "רביעי: 09:00 - 13:00 15:00 - 19:00",
+                        "חמישי: 09:00 - 13:00 15:00 - 19:00",
+                        "שישי: 09:00 - 14:00"
+                    ]
+                }
+            ]
+        }
+    },
+    "ru": {
+        "dir": "ltr",
+        "siteTitle": "SmileDent - Доктор Сэмми",
+        "title": "SmileDent - Доктор Сэмми",
+        "pages": ["Главная", "пациенты", "о нас"],
+        "mainButtonText": "Связаться с нами",
+        "cc": "Все права принадлежат SmileDent - Доктор Сэмми",
+
+        "hero": {
+            "text": "Хотите иметь красивые здоровые зубы?",
+            "description": [
+                "“SmileDent - Доктор Сэмми”  — современная стоматология на Подоле, где проводятся все виды услуг. Наша зубная клиника оснащена всем необходимым оборудованием для решения любых стоматологических задач, специалисты регулярно повышают свою квалификацию, чтобы предоставлять вам профессиональную помощь.",
+                "Придя в наш стоматологический центр, вы попадете в заботливые руки зубного врача терапевта на консультацию. После тщательного осмотра специалист предоставит вам всю необходимую информацию о проблемах, которые требуют скорейшего решения. При необходимости возможна консультация других врачей, чтобы выработать индивидуальный план, который будет содержать всю информацию о предстоящем лечении: порядок процедур, сколько понадобится времени на лечение и какова его стоимость.",
+                "Стоматологическая клиника “SmileDent - Доктор Сэмми”  — это великолепное соотношение высокого качества услуг и адекватная цена на лечение. Придя к нам, вы будете улыбаться чаще!"
+            ],
+            "description": [
+                "אצל דר סמי אנחנו מציעים טיפולי שיניים ברמה מקצועית עם יחס אישי ואווירה טובה.",
+                "דר סמי עובר בתחום רפואת השיניים יותר מ-25 שנה ועומד בראש מרפאת השיניים סמייל דנט שברמת גן",
+                "המרפאה מציעה מגוון טיפולים שונים כגון טיפולי חירום, טיפולי אותודנטיה, טיפולי חניכיים ושיקום הפה, טיפולים מונעים וטיפולים כירוגיים מרוכבים ועוד."
+            ],
+            "mainButtonText": "Связаться с нами",
+            "secondButtonText": "נווט למרפאה",
+            "altText": "Доктор Сами - SmileDent"
+        },
+        "features": {
+            "title": "Знакомство с услугами клиники",
+            "subTitle": "Процедуры проводятся мягко и профессионально, в непринужденной обстановке и с теплым отношением.",
+             "features": [
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "Осмотр, консультация, план лечения и бесплатная смета",
+                    "text": "מבוססות על ניסיון של 25 שנה כמומחה לשיקום. חיסכון בעלויות – הטיפול המותאם ביותר לשיניים שלך!",
+                    "class":"'text-rose-500'"
+                },
+                {        
+                    "icon": "mdi:tooth-outline",
+                    "title": "выпрямление зубов",
+                    "text": "",
+                    "text": "מרפאתנו מתמחה ביישור שיניים לבוגרים והגשמת חלום - שיניים ישרות ומושלמות.",
+                    "class":"'text-primary-600'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "שיקום הפה",
+                    "text": "הגישה הרפואית המתקדמת, הבטוחה והאסתית ביותר להשבת התפקודים הדנטליים למערכת הלעיסה, הלסתות והפנים.",
+                    "class":"'text-rose-500'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "Эстетическая стоматология",
+                    "text": "במרפאה ניתנים מגוון טיפולי שיניים מקצועיים לתיקון פגיעות ונזקים בשיניים, העוזרים לכם להיראות ולהרגיש נפלא. הטיפולים כוללים: שתלים, כתרים וסתימות, הלבנה וציפוי שיניים.",
+                    "class":"'text-primary-600'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title":"השתלות שיניים",
+                    "text": "במרפאה אנו מבצעים השתלות שיניים ושיקום על גבי שתלים, לסובלים מבעיות חוסר שיניים או משיניים פגומות. הטיפול המקצועי והאיכות הגבוהה של השתלים הדנטליים, מבטיחים תוצאות הנשמרות למשך שנים רבות.",
+                    "class":"'text-rose-500'"
+                },
+                {
+                    "icon": "mdi:tooth-outline",
+                    "title": "Пародонтология - лечение заболеваний десен",
+                    "text": "דר סמי הינו מומחה לטיפול במחלות החניכיים, הוא יטבחן באופן מדוייק את בעיית החניכיים ויציאה דרכי טיפול ופתרונות מתקדמים לטיפול הבעיה.",
+                    "class":"'text-primary-600'"
+                }
+            ]
+        },
+        "gallery": {
+            "imageAlt": "Фото клиники доктора Сами Рамат Ган",
+            "title": "Фотографии клиники",
+            "youtube": "https://www.youtube.com/watch?v=mosSGV6awRE"
+        },
+        "testimonials": {
+            "miniTitle": "Отзывы клиентов",
+            "title": "Наши клиенты Рекомендация клиники",
+            "reviews": [
+                {
+                    "text": "Мой опыт лечения в клинике доктора Сами был таким, которого у меня не было раньше. Он очень профессиональный, внимательный и хорошо осведомленный!",
+                    "alt": "Рекомендация доктора Сами Рамат Гана",
+                    "username": "Виолетта C",
+                    "image": "https://media.cssninja.io/shuriken/avatars/4.svg"
+                },
+                {
+                    "text": "Очень гениальное и профессиональное отношение персонала и доктора, они замечательные.",
+                    "alt": "Рекомендация доктора Сами Рамат Гана",
+                    "username": "Элионор н",
+                    "image": "https://media.cssninja.io/shuriken/avatars/2.svg"
+                },
+                {
+                    "text": "Профессиональная работа и уход за собой! Я очень рекомендую доктора Сами.",
+                    "alt": "Рекомендация доктора Сами Рамат Гана",
+                    "username": "Гай ф",
+                    "image": "https://media.cssninja.io/shuriken/avatars/3.svg"
+                },
+                {
+                    "text": "Вся моя семья - пациенты доктора Сами! Это профессиональный и надежный врач! Настоятельно рекомендую ❤🙏",
+                    "alt": "Рекомендация доктора Сами Рамат Гана",
+                    "username": "Светлана С",
+                    "image": "https://media.cssninja.io/shuriken/avatars/9.svg"
+                },
+                {
+                    "text": "Прекрасный доктор лучший в Израиле. Отличные цены.",
+                    "alt": "Рекомендация доктора Сами Рамат Гана",
+                    "username": "Ольга Г",
+                    "image": "https://media.cssninja.io/shuriken/avatars/12.svg"
+                }
+            ]
+        },
+        "cta": {
+            "title": "SmileDent клиника из Доктор Сэмми",
+            "buttonText": "Связаться с нами",
+            "buttonLink": "tel:036724060",
+            "items": [
+                {
+                    "icon": "mdi:phone-outline",
+                    "title": "телефон",
+                    "text": ["03-6724060"]
+                },
+                {
+                    "icon": "mdi:address-marker-outline",
+                    "title": "Адрес",
+                    "text": ["Haroea 24, Ramat Gan"]
+                },
+                {
+                    "icon": "mdi:shop-hours-outline",
+                    "title": "Часы работы",
+                    "text": [
+                        "Воскресенье: Closed",
+                        "понедельник: 09:00 - 15:00 13:00 - 19:00",
+                        "Вторник: Closed",
+                        "среда: 09:00 - 15:00 13:00 - 19:00",
+                        "четверг: 09:00 - 15:00 13:00 - 19:00",
+                        "пятница: 09:00 - 14:00"
+                    ]
+                }
+            ]
+        }
+    }
+}

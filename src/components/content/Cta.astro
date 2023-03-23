@@ -1,7 +1,7 @@
 ---
 import Map from '../base/Map.astro';
 import IconBlock from "@components/content/IconBlock.astro";
-// const {url, rounded} = Astro.props;
+const { title, google, items, buttonText, buttonLink } = Astro.props;
 ---
 
 <div class="py-10">
@@ -10,50 +10,70 @@ import IconBlock from "@components/content/IconBlock.astro";
       class="bg-primary-900 rounded-3xl shadow-xl overflow-hidden ltablet:grid ltablet:grid-cols-2 ltablet:gap-4 lg:grid lg:grid-cols-2 lg:gap-4"
     >
       <div
-        class="flex items-center pt-10 pb-12 px-6 sm:pt-16 sm:px-16 ltablet:py-20 ltablet:pr-0 lg:py-20 lg:pr-0 xl:px-20"
+        class="flex items-center pt-10 pb-12 px-3 sm:pt-16 sm:px-16 ltablet:py-12 ltablet:pr-0 lg:py-12 lg:pr-0 xl:px-12"
       >
         
-        <div class="ltablet:self-center lg:self-center font-sans divide-y">
+        <div class="ltablet:self-center lg:self-center font-sans">
           <h2 class="text-3xl font-medium text-white sm:text-4xl">
-            <span class="block">מרפאת סמייל דנט של ד"ר סמי</span>
+            <span class="block">{title}</span>
           </h2>
           
-          <div class="text-white">
-            <div class="flex items-center">
-              <i class="iconify w-7 h-7 mb-2 text-white" data-icon="mdi:phone-outline"></i>
-              <p>טלפון</p>
+          <div class="grid md:grid-cols-2 ltablet:grid-cols-2 lg:grid-cols-2 gap-y-6 pt-5" x-intersect="activeStep = ''">
+            
+            <div class="flex items-start">
+              <div class="shrink-0">
+                <div class="p-4 bg-white rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                  <i class="iconify w-7 h-7 mb-2 text-black" data-icon={items[1].icon}></i>
+                </div>
+              </div>
+              <div class="px-3">
+                <p class="font-bold text-black mb-1">{items[0].title}</p>
+                {items[0].text.map((txt) => (
+                  <p class="text-white">{txt}</p>
+                ))}
+              </div>
             </div>
-            <b>03-6724060</b>
+
+            
+            <div class="flex items-start">
+              <div class="shrink-0">
+                <div class="p-4 bg-white rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                  <i class="iconify w-7 h-7 mb-2 text-black" data-icon={items[1].icon}></i>
+                </div>
+              </div>
+              <div class="px-3">
+                <p class="font-bold text-black mb-1">{items[1].title}</p>
+                {items[1].text.map((txt) => (
+                  <p class="text-white">{txt}</p>
+                ))}
+              </div>
+            </div>
+
+
           </div>
 
-          
-          <div class="text-white">
-            <div class="flex items-center">
-              <i class="iconify w-7 h-7 mb-2 text-white" data-icon="mdi:address-marker-outline"></i>
-              <p>כתובת</p>
+            
+          {items.slice(2).map((item) => (
+            <div class="flex items-start pt-5">
+              <div class="shrink-0">
+                <div class="p-4 bg-white rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                  <i class="iconify w-7 h-7 mb-2 text-black" data-icon={item.icon}></i>
+                </div>
+              </div>
+              <div class="px-3">
+                <p class="font-bold text-black mb-1">{item.title}</p>
+                {item.text.map((txt) => (
+                  <p class="text-white">{txt}</p>
+                ))}
+              </div>
             </div>
-            <b>הרא"ה 24, רמת גן</b>
-          </div>
-          
-          
-          <div class="text-white">
-            <div class="flex items-center">
-              <i class="iconify w-7 h-7 mb-2 text-white" data-icon="mdi:shop-hours-outline"></i>
-              <p>שעות פעילות</p>
-            </div>
-            <p>ראשון: סגור</p>
-            <p>שני: 09:00 - 13:00 15:00 - 19:00</p>
-            <p>שלישי: סגור</p>
-            <p>רביעי: 09:00 - 13:00 15:00 - 19:00</p>
-            <p>חמישי: 09:00 - 13:00 15:00 - 19:00</p>
-            <p>שישי: 09:00 - 14:00</p>
-          </div>
+          ))}
 
           <a
-            href="tel:036724060"
+            href={buttonLink}
             class="mt-8 bg-white border border-transparent rounded-xl shadow px-6 py-4 inline-flex items-center text-sm font-medium text-muted-600 hover:text-white hover:bg-primary-400 transition-colors duration-300"
           >
-            התקשר כעת
+            {buttonText}
           </a>
 
           <!--
@@ -68,10 +88,10 @@ import IconBlock from "@components/content/IconBlock.astro";
       </div>
 
       <div
-        class="flex items-center pt-10 pb-12 px-3 sm:pt-16 sm:px-16 ltablet:py-10 ltablet:pr-0 lg:py-10 lg:pr-0 xl:px-10"
+        class="flex items-center pt-10 pb-12 px-3 sm:pt-16 sm:px-16 ltablet:py-12 ltablet:pr-0 lg:py-12 lg:pr-0 xl:px-12"
       >
         
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.4548450885995!2d34.82099938426681!3d32.0839905811868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4a34a8d2fb8b%3A0x466137cf12df5003!2z157XqNek15DXqiDXqdeZ16DXmdeZ150tINeTIteoINeeLiDXodee15k!5e0!3m2!1siw!2sil!4v1678098227874!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src={google} width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
       </div>
 

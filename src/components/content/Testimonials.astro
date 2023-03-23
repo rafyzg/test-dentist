@@ -1,156 +1,56 @@
 ---
 import Polka from "@components/base/Polka.astro";
 import Card from "@components/base/Card.astro";
+
+const { testimonials } = Astro.props;
+
 ---
 
 <div x-cloak class="relative overflow-hidden" x-intersect="activeStep = ''">
   <div x-data="swiper()" class="carousel-container">
-    <div class="carousel-controls flex items-center justify-end mb-4">
-      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slideNext()">
-        <i class="iconify" data-icon="lucide:arrow-right"></i>
-      </button>
+    <div class="carousel-controls flex items-center justify-end mb-4" dir="ltr">
+
       <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slidePrev()">
         <i class="iconify" data-icon="lucide:arrow-left"></i>
+      </button>
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slideNext()">
+        <i class="iconify" data-icon="lucide:arrow-right"></i>
       </button>
 
     </div>
     <div class="swiper-container" x-ref="container">
       <div class="swiper-wrapper">
+
         <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <i
-                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
-                data-icon="fa6-solid:quote-left"></i>
-              <p class="text-muted-500 dark:text-muted-300">
-                חווית הטיפול במרפאתו של דר' סמי הינה כזאת שלא זכיתי לה אצל אף רופא שיניים אחר. דר' סמי הינו רופא בעל ידע רב, יסודי, קפדן ומקצועי ביותר! דר' סמי רופא הגון, קשוב ואמין!
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10">
-                  <img
-                    src="https://media.cssninja.io/shuriken/avatars/4.svg"
-                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
-                    alt="User image"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Violetta S
-                  </h4>
+        {testimonials.map((test) => (
+          <div class="swiper-slide">
+            <Card class="'p-6'">
+              <div class="w-full flex flex-col gap-8 font-sans">
+                <i
+                  class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
+                  data-icon="fa6-solid:quote-left"></i>
+                <p class="text-muted-500 dark:text-muted-300">
+                  {test.text}  
+                </p>
+                <div class="w-full flex items-center gap-3">
+                  <div class="shrink-0 inline-flex relative w-10 h-10">
+                    <img
+                      src={test.image}
+                      class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                      alt={test.alt}
+                    />
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                      {test.username}
+                    </h4>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <i
-                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
-                data-icon="fa6-solid:quote-left"></i>
-              <p class="text-muted-500 dark:text-muted-300">
-                יחס מאוד אדיב ומקצועי של הצוות ושל הרופא. פשוט מקסימים.
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10">
-                  <img
-                    src="https://media.cssninja.io/shuriken/avatars/2.svg"
-                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
-                    alt="User image"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Elionor n
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <i
-                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
-                data-icon="fa6-solid:quote-left"></i>
-              <p class="text-muted-500 dark:text-muted-300">
-                עבודה מקצועית ויחס אישי!! מומלץ בחום!!
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10">
-                  <img
-                    src="https://media.cssninja.io/shuriken/avatars/3.svg"
-                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
-                    alt="User image"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Guy F
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <i
-                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
-                data-icon="fa6-solid:quote-left"></i>
-              <p class="text-muted-500 dark:text-muted-300">
-                ממליצה בחום! רופא אמין ומקצועי! כל המשפחה שלי מטופלת אצלו ,אין על דוקטור סמי ❤🙏
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10">
-                  <img
-                    src="https://media.cssninja.io/shuriken/avatars/9.svg"
-                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
-                    alt="User image"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Svetlana S
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <i
-                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
-                data-icon="fa6-solid:quote-left"></i>
-              <p class="text-muted-500 dark:text-muted-300">
-                זה הרופא הטוב ביותר לכל המשפחה שלנו
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10">
-                  <img
-                    src="https://media.cssninja.io/shuriken/avatars/12.svg"
-                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
-                    alt="User image"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Olga G
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
+            </Card>
+          </div>
+        ))}
+
       </div>
     </div>
   </div>

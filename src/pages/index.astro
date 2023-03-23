@@ -1,5 +1,5 @@
 ---
-import Layout from "@layouts/Default.astro";
+import Main from "@layouts/Main.astro";
 import ButtonMain from "@components/base/ButtonMain.astro";
 import HeroMain from "@components/hero/HeroMain.astro";
 import SectionMuted from "@components/section/SectionMuted.astro";
@@ -16,152 +16,13 @@ import Cta from "@components/content/Cta.astro";
 import Testimonials from "@components/content/Testimonials.astro";
 import ImageSlider from "@components/content/ImageSlider.astro";
 import YoutubeSection from "@components/content/YoutubeSection.astro";
+
+import json from "../data.json";
+
+const telephone = json['telephone'];
+const data = json['he'];
+
 ---
-
-<Layout title="דר סמי">
-
-  <div id="doctors">
-    <HeroMain />
-  </div>
-  <SectionMuted>
-    <Container>
-      <SectionTitle
-        title="הכירו את שירותי המרפאה"
-        subtitle="הטיפולים מתבצעים בעדינות ובמקצועיות, עם אווירה רגועה ויחס חם."
-        minititle=""
-      />
-
-      <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
-        <!-- Item -->
-        <div>
-          <IconBlock
-            title="בדיקה, יעוץ, תכנית טיפול והצעת מחיר בחינם"
-            text="מבוססות על ניסיון של 25 שנה כמומחה לשיקום. חיסכון בעלויות – הטיפול המותאם ביותר לשיניים שלך!            "
-            icon="mdi:tooth-outline"
-            class="'text-rose-600'"
-          />
-        </div>
-        <!-- Item -->
-        <div>
-          <IconBlock
-            title="השתלות שיניים"
-            text="במרפאה אנו מבצעים השתלות שיניים ושיקום על גבי שתלים, לסובלים מבעיות חוסר שיניים או משיניים פגומות. הטיפול המקצועי והאיכות הגבוהה של השתלים הדנטליים, מבטיחים תוצאות הנשמרות למשך שנים רבות."
-            icon="mdi:tooth-outline"
-            class="'text-primary-600'"
-          />
-        </div>
-        <!-- Item -->
-        <div>
-          <IconBlock
-            title="שיקום הפה"
-            text="הגישה הרפואית המתקדמת, הבטוחה והאסתית ביותר להשבת התפקודים הדנטליים למערכת הלעיסה, הלסתות והפנים."
-            icon="mdi:tooth-outline"
-            class="'text-rose-500'"
-          />
-        </div>
-        <!-- Item -->
-        <div>
-          <IconBlock
-            title="טיפולים אסתטיים"
-            text="במרפאה ניתנים מגוון טיפולי שיניים מקצועיים לתיקון פגיעות ונזקים בשיניים, העוזרים לכם להיראות ולהרגיש נפלא. הטיפולים כוללים: שתלים, כתרים וסתימות, הלבנה וציפוי שיניים."
-            icon="mdi:tooth-outline"
-            class="'text-primary-600'"
-          />
-        </div>
-        <!-- Item -->
-        <div>
-          <IconBlock
-            title="פריודונטיה - טיפולים במחלת חניכיים"
-            text="דר סמי הינו מומחה לטיפול במחלות החניכיים, הוא יטבחן באופן מדוייק את בעיית החניכיים ויציאה דרכי טיפול ופתרונות מתקדמים לטיפול הבעיה."
-            icon="mdi:tooth-outline"
-            class="'text-rose-500'"
-          />
-        </div>
-        <!-- Item -->
-        <div>
-          <IconBlock
-            title="טיפולי יישור שיניים"
-            text="מרפאתנו מתמחה ביישור שיניים לבוגרים והגשמת חלום - שיניים ישרות ומושלמות."
-            icon="mdi:tooth-outline"
-            class="'text-primary-600'"
-          />
-        </div>
-      </div>
-    </Container>
-  </SectionMuted>
-<!--
-  <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
-    <Container>
-      <SectionTitle
-        title="Our great doctors"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-        minititle="Healthcare Professionals"
-        class="'mx-auto text-center'"
-      />
-
-      <div x-data="doctors()"  x-intersect="activeStep = 'spy-1'">
-        <Toolbar />
-      -->
-        <!--Grid wrapper-->
-        <!--
-        <div class="py-10">
-          <div class="grid grid-cols-12 md:gap-12 pb-20">
-            <!--Filters
-            <div class="hidden lg:block col-span-12 lg:col-span-3">
-              <Filters />
-            </div>
-            <!--Content
-            <div class="col-span-12 lg:col-span-9">
-              <!--Subgrid
-              <Grid />
-            </div>
-          </div>
-          <div class="flex items-center justify-center mt-10">
-            <ButtonMain to="#" class="'w-64 !h-14 max-w-full'">View All Doctors</ButtonMain>
-          </div>
-        </div>
-      </div>
-    </Container>
-  </SectionMuted>
-
-  <SectionMuted class="'overflow-hidden'">
-    <Container>
-      <div class="py-10">
-        <SideStatsRight />
-        <SideStatsLeft />
-      </div>
-    </Container>
-  </SectionMuted>
--->
-  <SectionMuted>
-    <Container>
-      <SectionTitle
-        title="המרפאה"
-        class="'mx-auto text-center'"
-      />
-      <YoutubeSection url="https://www.youtube.com/watch?v=mosSGV6awRE" rounded />
-      <ImageSlider />
-    </Container>
-  </SectionMuted>
-
-  <div id="product">
-    <SectionMuted>
-      <Container>
-        <SectionTitle
-          title="המלצות לקוחותינו על המרפאה"
-          minititle="חוות דעת"
-          class="'mx-auto text-center'"
-        />
-        <Testimonials />
-      </Container>
-    </SectionMuted>
-  </div>
-
-  <div id="pricing">
-    <SectionMuted>
-      <Container>
-        <Cta />
-      </Container>
-    </SectionMuted>
-  </div>
-</Layout>
+<Main
+  lang={"he"}
+/>
